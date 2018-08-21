@@ -1,0 +1,31 @@
+{
+  "name": "github-poc-original",
+  "version": "1.0.0",
+  "description": "A express poc",
+  "main": "server.js",
+  "scripts": {
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --reporter spec --recursive ./test",
+    "test-only": "APP_ENV=test ./node_modules/.bin/_mocha --reporter spec --recursive test",
+    "start": "node fetchSecrets.js && node server.js"
+  },
+  "keywords": [],
+  "author": "Vaibhav Kumar Jain",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-validator": "^5.3.0",
+    "lodash": "^4.17.10",
+    "mongoose": "^5.2.8",
+    "morgan": "^1.7.0",
+    "swagger-jsdoc": "^3.0.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "istanbul": "~0.4.5",
+    "mocha": "^2.4.5",
+    "should": "^13.2.3"
+  }
+}

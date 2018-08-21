@@ -1,0 +1,5 @@
+module.exports = {
+    development: 'mongodb://127.0.0.1:27017/crud-notes',
+    test: 'mongodb://127.0.0.1:27017/crud-notes-test'
+}
+
